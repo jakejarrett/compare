@@ -31,5 +31,5 @@ export function compare (o: Object, b: Object, t: string) : Boolean {
     /** When the value is undefined on the second obj */
     for (let p in b) { if (o[p] == null) return false; }
 
-	return true;
+    return true;
 };
