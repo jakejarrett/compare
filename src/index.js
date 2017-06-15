@@ -26,7 +26,7 @@ export function compare (o: Object, b: Object, t: string) : Boolean {
 
         /** If its simply a key:value store */
         if (o[p] != b[p]) return false;
-	}
+    }
     
     /** When the value is undefined on the second obj */
     for (let p in b) { if (o[p] == null) return false; }
