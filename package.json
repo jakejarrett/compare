@@ -1,0 +1,22 @@
+{
+  "name": "@jakejarrett/compare",
+  "version": "1.0.0",
+  "description": "Minimal object comparison function",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src/ -d lib/",
+    "prepublish": "npm run build",
+    "flow": "flow"
+  },
+  "keywords": [
+    "Object comparison"
+  ],
+  "author": "Jake Jarrett <jakeryanjarrett@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-remove-comments": "^2.0.0",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.48.0"
+  }
+}
