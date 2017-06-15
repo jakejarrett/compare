@@ -12,9 +12,9 @@ export function compare (o: Object, b: Object, t: string) : Boolean {
     /**
      * For each parameter in the first object
      */
-	for (let p in o) {
+    for (let p in o) {
         /** If they don't share a property */
-		if (o.hasOwnProperty(p) !== b.hasOwnProperty(p)) return false;
+        if (o.hasOwnProperty(p) !== b.hasOwnProperty(p)) return false;
         
         t = typeof (o[p]);
 
@@ -29,7 +29,7 @@ export function compare (o: Object, b: Object, t: string) : Boolean {
 	}
     
     /** When the value is undefined on the second obj */
-	for (let p in b) { if (o[p] == null) return false; }
+    for (let p in b) { if (o[p] == null) return false; }
 
 	return true;
 };
